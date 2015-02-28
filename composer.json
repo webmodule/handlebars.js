@@ -16,6 +16,6 @@
         }
     ],
     "require": {
-        
+        "frameworks/handlebars.js": "dev-master"
     }
 }
