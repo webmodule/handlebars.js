@@ -8,6 +8,6 @@
     "license": "MIT",
     
     "require": {
-      "components/handlebars.js": "3.0.0"
+      "webmodules/handlebars.js": "3.0.0"
     }
 }
