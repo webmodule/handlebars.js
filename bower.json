@@ -1,0 +1,8 @@
+{
+  "name": "dummyJson",
+  "version": "0.0.3",
+  "main": "dummyJson.js",
+  "dependencies": {
+      "handlebars": "3.0.0"
+  }
+}
