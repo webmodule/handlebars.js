@@ -1,5 +1,5 @@
 {
-    "name": "webmodules/dummy-json",
+    "name": "webmodules/dummyJson",
     "type": "library",
     "description":  "Dummy JSON generator for Node.js",
     "homepage": "https://github.com/webmodule/dummy-json",
