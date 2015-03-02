@@ -1,5 +1,5 @@
 (function(modeulName,cb){
-	return (eval('utils.define')) ? utils.define(modeulName).as(cb) : cb(window[modeulName] = {});
+	return (window.utils && window.utils.define) ? utils.define(modeulName).as(cb) : cb(window[modeulName] = {});
 })("dummyJson",function(dummyJson,_dummyJson_){
 	
 	var Handlebars = window.Handlebars || (require ? require('handlebars') : {});
