@@ -1,5 +1,5 @@
 {
-  "name": "dummyJson",
+  "name": "webmodules-dummy-json",
   "version": "0.0.3",
   "main": "dummyJson.js",
   "dependencies": {
