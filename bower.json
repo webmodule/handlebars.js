@@ -1,6 +1,6 @@
 {
 	"name": "webmodules-dummy-json",
-	"version": "0.0.3",
+	"version": "0.0.7",
 	"main": "dummyJson.js",
   
 	"authors": [
