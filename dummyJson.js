@@ -1,6 +1,27 @@
-(function(modeulName,cb){
-	return (window.utils && window.utils.define) ? utils.define(modeulName).as(cb) : cb(window[modeulName] = {});
-})("dummyJson",function(dummyJson,_dummyJson_){
+(function(root,modeulName,cb){
+  "use strict";
+  if(root.utils && typeof root.utils.define === 'function') {
+    //Utils Package System
+    return utils.define(modeulName).as(cb);
+  } else {
+    var factory = function(){
+      var X = {};
+      cb(X);
+      return X;
+    };
+    if (typeof root.define === 'function' && root.define.amd) {
+      //AMD based package system
+      root.define([], factory);
+    } else if(window.define && window.define.get){
+      return define({ "fileName": modeulName }).content(factory);
+    } else if (typeof exports === 'object') {
+      //EXPORT based system
+      module.exports = factory();
+    } else {
+      root[modeulName] = factory();
+    }
+  }
+})(this,"dummyJson",function(dummyJson,_dummyJson_){
 	
 	var getHandlebars = function(){
 		return window.Handlebars || (require ? require('handlebars') : {});
