@@ -181,5 +181,14 @@
 	  dummyJson.randomFloat = randomFloat;
 	  dummyJson.randomBoolean = randomBoolean;
 	  dummyJson.zeroPad = zeroPad;
+	  
+	  dummyJson.formatters = function(source){
+        for (var k in source) {
+          if (source.hasOwnProperty(k)) {
+            helpers[k] = source[k];
+          }
+        }
+        return helpers;
+	  };
 });
 
