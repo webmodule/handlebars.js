@@ -1,6 +1,5 @@
 {
-  "name": "handlebars",
-  "version": "3.0.0",
+  "name": "webmodules-handlebars",
   "main": "handlebars.js",
   "dependencies": {}
 }
