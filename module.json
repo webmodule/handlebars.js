@@ -1,7 +1,7 @@
 
 {
-  "name" : "webmodules/handlebar.js",
-  "webmodules/handlebar.js" : {
+  "name" : "webmodules/handlebarsjs",
+  "webmodules/handlebarsjs" : {
     "js" : ["handlebars.js"]
   }
 }
